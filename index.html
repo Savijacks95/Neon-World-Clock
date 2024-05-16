@@ -26,22 +26,26 @@
         <div class="city-one">
           <h3>Seattle, Washington</h3>
           <div class="date">April 1, 2024</div>
-          <div class="clock">12:00:00 Pm</div>
+          <div class="analog-clock" id="analogClock"></div>
+          <div class="digital-clock" id="digitalTime-one"></div>
         </div>
         <div class="city-two">
           <h3>Delhi, India</h3>
           <div class="date">April 1, 2024</div>
-          <div class="clock">12:00:00 Pm</div>
+          <div class="analog-clock" id="analogClock-two"></div>
+          <div class="digital-clock" id="digitalTime-two"></div>
         </div>
         <div class="city-three">
           <h3>Zurich, Switzerland</h3>
           <div class="date">April 1, 2024</div>
-          <div class="clock">12:00:00 Pm</div>
+          <div class="analog-clock" id="analogClock-three"></div>
+          <div class="digital-clock" id="digitalTime-three"></div>
         </div>
         <div class="city-four">
           <h3>Seoul, South Korea</h3>
           <div class="date">April 1, 2024</div>
-          <div class="clock">12:00:00 Pm</div>
+          <div class="analog-clock" id="analogClock-four"></div>
+          <div class="digital-clock" id="digitalTime-four"></div>
         </div>
       </div>
     </div>
@@ -53,6 +57,46 @@
         >Nana Banana</a
       >
     </footer>
+
+    <div class="clock">
+      <template id="analog-template">
+        <div class="analog">
+          <div class="circle" id="seconds" style="--clr: #a30cf5"><i></i></div>
+          <div class="circle circle2" id="minutes" style="--clr: #01f394">
+            <i></i>
+          </div>
+          <div class="circle circle3" id="hours" style="--clr: #d6ea57">
+            <i></i>
+          </div>
+          <span style="--n: 1"><strong>1</strong></span>
+          <span style="--n: 2"><strong>2</strong></span
+          ><span style="--n: 3"
+            ><font color="#B7DF00"><strong>3</strong></font></span
+          ><span style="--n: 4"><strong>4</strong></span
+          ><span style="--n: 5"><strong>5</strong></span
+          ><span style="--n: 6"
+            ><font color="#F50096"><strong>6</strong></font></span
+          ><span style="--n: 7"><strong>7</strong></span
+          ><span style="--n: 8"><strong>8</strong></span
+          ><span style="--n: 9"
+            ><font color="#D100E3"><strong>9</strong></font></span
+          ><span style="--n: 10"><strong>10</strong></span
+          ><span style="--n: 11"><strong>11</strong></span
+          ><span style="--n: 12"
+            ><font color=" #01C1E2"><strong>12</strong></font></span
+          >
+        </div>
+      </template>
+
+      <template id="digital-template">
+        <div class="digital">
+          <div id="hour" style="--clr: #d100e3">00</div>
+          <div id="minute" style="--clr: #a30cf5">00</div>
+          <div id="second" style="--clr: #d6ea57">00</div>
+          <div id="ampm" style="--clr: #00e3c7">AM</div>
+        </div>
+      </template>
+    </div>
 
     <script src="index.js"></script>
     <script src="clock.html"></script>
