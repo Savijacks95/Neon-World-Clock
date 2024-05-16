@@ -1,11 +1,32 @@
+body {
+  overflow: hidden;
+}
 .container {
-  margin: 50px auto;
+  margin: 0 auto;
   text-align: center;
   display: block;
-  max-width: 600px;
-  padding: 20px;
-  border: 1px solid black;
+
+  width: 800px;
+  height: 800px;
 }
+.city {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 15px;
+}
+.cityOne,
+.cityTwo,
+.cityThree,
+.cityFour {
+  border: 1px solid black;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  border-radius: 20px;
+  height: 125px;
+  margin: 2px;
+}
+
 footer {
   text-align: center;
   padding: 10px;
@@ -180,15 +201,12 @@ footer {
 
 .analog-clock {
   position: relative;
-  left: 10px;
-  top: -55px;
-  padding: 0%;
-  margin: 0%;
+  left: 15px;
+  top: -80px;
 }
 .digital-clock {
   position: relative;
-  padding: 0%;
-  margin: 0%;
-  left: 425px;
-  bottom: 160px;
+
+  left: 400px;
+  bottom: 180px;
 }

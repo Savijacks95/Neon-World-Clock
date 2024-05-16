@@ -14,90 +14,93 @@
   <body>
     <div class="container">
       <h1>Neon World Clock</h1>
-      <select name="" id="">
-        <option value="">Choose City</option>
-        <option value="">Seoul</option>
-        <option value="">New York</option>
-        <option value="">Madrid</option>
-        <option value="">Barcelona</option>
-        <option value="">Mumbai</option>
-      </select>
+
       <div class="city">
-        <div class="city-one">
+        <select name="" id="">
+          <option value="">Choose City</option>
+          <option value="">Seoul</option>
+          <option value="">New York</option>
+          <option value="">Madrid</option>
+          <option value="">Barcelona</option>
+          <option value="">Mumbai</option>
+        </select>
+        <div class="city cityOne">
           <h3>Seattle, Washington</h3>
           <div class="date">April 1, 2024</div>
           <div class="analog-clock" id="analogClock"></div>
           <div class="digital-clock" id="digitalTime-one"></div>
         </div>
-        <div class="city-two">
+        <div class="city cityTwo">
           <h3>Delhi, India</h3>
           <div class="date">April 1, 2024</div>
           <div class="analog-clock" id="analogClock-two"></div>
           <div class="digital-clock" id="digitalTime-two"></div>
         </div>
-        <div class="city-three">
+        <div class="city cityThree">
           <h3>Zurich, Switzerland</h3>
           <div class="date">April 1, 2024</div>
           <div class="analog-clock" id="analogClock-three"></div>
           <div class="digital-clock" id="digitalTime-three"></div>
         </div>
-        <div class="city-four">
+        <div class="city cityFour">
           <h3>Seoul, South Korea</h3>
           <div class="date">April 1, 2024</div>
           <div class="analog-clock" id="analogClock-four"></div>
           <div class="digital-clock" id="digitalTime-four"></div>
         </div>
       </div>
-    </div>
-    <footer>
-      This Page Was Coded By:
-      <a
-        href="https://github.com/Savijacks95/Neon-World-Clock.git"
-        target="_blank"
-        >Nana Banana</a
-      >
-    </footer>
 
-    <div class="clock">
-      <template id="analog-template">
-        <div class="analog">
-          <div class="circle" id="seconds" style="--clr: #a30cf5"><i></i></div>
-          <div class="circle circle2" id="minutes" style="--clr: #01f394">
-            <i></i>
+      <footer>
+        This Page Was Coded By:
+        <a
+          href="https://github.com/Savijacks95/Neon-World-Clock.git"
+          target="_blank"
+          >Nana Banana</a
+        >
+      </footer>
+
+      <div class="clock">
+        <template id="analog-template">
+          <div class="analog">
+            <div class="circle" id="seconds" style="--clr: #a30cf5">
+              <i></i>
+            </div>
+            <div class="circle circle2" id="minutes" style="--clr: #01f394">
+              <i></i>
+            </div>
+            <div class="circle circle3" id="hours" style="--clr: #d6ea57">
+              <i></i>
+            </div>
+            <span style="--n: 1"><strong>1</strong></span>
+            <span style="--n: 2"><strong>2</strong></span
+            ><span style="--n: 3"
+              ><font color="#B7DF00"><strong>3</strong></font></span
+            ><span style="--n: 4"><strong>4</strong></span
+            ><span style="--n: 5"><strong>5</strong></span
+            ><span style="--n: 6"
+              ><font color="#F50096"><strong>6</strong></font></span
+            ><span style="--n: 7"><strong>7</strong></span
+            ><span style="--n: 8"><strong>8</strong></span
+            ><span style="--n: 9"
+              ><font color="#D100E3"><strong>9</strong></font></span
+            ><span style="--n: 10"><strong>10</strong></span
+            ><span style="--n: 11"><strong>11</strong></span
+            ><span style="--n: 12"
+              ><font color=" #01C1E2"><strong>12</strong></font></span
+            >
           </div>
-          <div class="circle circle3" id="hours" style="--clr: #d6ea57">
-            <i></i>
+        </template>
+
+        <template id="digital-template">
+          <div class="digital">
+            <div id="hour" style="--clr: #d100e3">00</div>
+            <div id="minute" style="--clr: #a30cf5">00</div>
+            <div id="second" style="--clr: #d6ea57">00</div>
+            <div id="ampm" style="--clr: #00e3c7">AM</div>
           </div>
-          <span style="--n: 1"><strong>1</strong></span>
-          <span style="--n: 2"><strong>2</strong></span
-          ><span style="--n: 3"
-            ><font color="#B7DF00"><strong>3</strong></font></span
-          ><span style="--n: 4"><strong>4</strong></span
-          ><span style="--n: 5"><strong>5</strong></span
-          ><span style="--n: 6"
-            ><font color="#F50096"><strong>6</strong></font></span
-          ><span style="--n: 7"><strong>7</strong></span
-          ><span style="--n: 8"><strong>8</strong></span
-          ><span style="--n: 9"
-            ><font color="#D100E3"><strong>9</strong></font></span
-          ><span style="--n: 10"><strong>10</strong></span
-          ><span style="--n: 11"><strong>11</strong></span
-          ><span style="--n: 12"
-            ><font color=" #01C1E2"><strong>12</strong></font></span
-          >
-        </div>
-      </template>
-
-      <template id="digital-template">
-        <div class="digital">
-          <div id="hour" style="--clr: #d100e3">00</div>
-          <div id="minute" style="--clr: #a30cf5">00</div>
-          <div id="second" style="--clr: #d6ea57">00</div>
-          <div id="ampm" style="--clr: #00e3c7">AM</div>
-        </div>
-      </template>
+        </template>
+      </div>
     </div>
-
     <script src="index.js"></script>
   </body>
 </html>
