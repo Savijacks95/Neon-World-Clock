@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="style.css" />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
     />
   </head>
   <body>
+    <h1>Neon World Clock</h1>
     <div class="container">
-      <h1>Neon World Clock</h1>
-
       <div class="city">
         <select name="" id="">
           <option value="">Choose City</option>
@@ -24,41 +23,43 @@
           <option value="">Barcelona</option>
           <option value="">Mumbai</option>
         </select>
-        <div class="city cityOne">
-          <h3>Seattle, Washington</h3>
-          <div class="date">April 1, 2024</div>
+        <div class="time cityOne">
+          <div class="location">
+            Seattle, Washington
+            <div class="date">April 1, 2024</div>
+          </div>
+
           <div class="analog-clock" id="analogClock"></div>
           <div class="digital-clock" id="digitalTime-one"></div>
         </div>
-        <div class="city cityTwo">
-          <h3>Delhi, India</h3>
-          <div class="date">April 1, 2024</div>
+        <div class="time cityTwo">
+          <div class="location">
+            Delhi, India
+            <div class="date">April 1, 2024</div>
+          </div>
+
           <div class="analog-clock" id="analogClock-two"></div>
           <div class="digital-clock" id="digitalTime-two"></div>
         </div>
-        <div class="city cityThree">
-          <h3>Zurich, Switzerland</h3>
-          <div class="date">April 1, 2024</div>
+        <div class="time cityThree">
+          <div class="location">
+            Zurich, Switzerland
+            <div class="date">April 1, 2024</div>
+          </div>
+
           <div class="analog-clock" id="analogClock-three"></div>
           <div class="digital-clock" id="digitalTime-three"></div>
         </div>
-        <div class="city cityFour">
-          <h3>Seoul, South Korea</h3>
-          <div class="date">April 1, 2024</div>
-          <div class="analog-clock" id="analogClock-four"></div>
-          <div class="digital-clock" id="digitalTime-four"></div>
-        </div>
+
+        <footer>
+          This Page Was Coded By:
+          <a
+            href="https://github.com/Savijacks95/Neon-World-Clock.git"
+            target="_blank"
+            >Nana Banana</a
+          >
+        </footer>
       </div>
-
-      <footer>
-        This Page Was Coded By:
-        <a
-          href="https://github.com/Savijacks95/Neon-World-Clock.git"
-          target="_blank"
-          >Nana Banana</a
-        >
-      </footer>
-
       <div class="clock">
         <template id="analog-template">
           <div class="analog">
