@@ -1,10 +1,10 @@
 body {
-  overflow: hidden;
   display: grid;
   justify-content: center;
   align-content: center;
   color: #fff;
   background: radial-gradient(#0c1630, #05060f);
+  overflow: hidden;
 }
 .container {
   font-family: Roboto, sans-serif;
@@ -13,8 +13,11 @@ body {
   font-size: 15px;
   width: 800px;
   height: 750px;
-  border: 1px solid black;
+  border: 1px solid #a30cf5;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px 5px #a30cf5b0;
 }
+
 .city {
   max-width: 600px;
   margin: 20px auto;
