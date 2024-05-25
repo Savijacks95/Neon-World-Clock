@@ -81,8 +81,8 @@ footer {
   font-weight: 900;
   color: #d100e3;
   position: relative;
-  right: 30px;
-  top: 55px;
+  right: -10px;
+  top: 50px;
 }
 .town {
   color: #03dfc7;
@@ -109,8 +109,8 @@ footer {
   font-size: 1em;
   font-weight: 500;
   position: relative;
-  top: -15px;
-  left: 195px;
+  top: -153px;
+  right: 325px;
 }
 .day {
   color: #a30cf4;
