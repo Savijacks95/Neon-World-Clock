@@ -58,7 +58,7 @@ select {
 .cityTwo,
 .cityThree {
   position: relative;
-  top: 275px;
+  top: 225px;
   border-radius: 25px;
 
   margin-bottom: 15px;
@@ -70,7 +70,7 @@ footer {
   text-align: center;
   padding: 50px;
   position: relative;
-  top: 250px;
+  top: 200px;
 }
 
 .clock {
