@@ -50,19 +50,22 @@ select {
   top: 15px;
   left: 320px;
   border-radius: 7px;
-  font-family: Roboto, sans-serif;
-  font-size: 1em;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  color: #07a18a;
+  background: #09f5d1;
+  border-color: #00f594;
+  box-shadow: 0px 2px 20px 1px #00f594;
 }
 
 .cityOne,
 .cityTwo,
 .cityThree {
   position: relative;
-  top: 225px;
+  top: 105px;
   border-radius: 25px;
-
   margin-bottom: 15px;
-
   height: 125px;
 }
 
@@ -70,7 +73,50 @@ footer {
   text-align: center;
   padding: 50px;
   position: relative;
-  top: 200px;
+  top: 80px;
+}
+
+.place {
+  font-size: 3em;
+  font-weight: 900;
+  color: #d100e3;
+  position: relative;
+  right: 30px;
+  top: 55px;
+}
+.town {
+  color: #03dfc7;
+}
+.hour {
+  font-size: 5.5em;
+  font-weight: 800;
+  color: #00f594;
+  position: relative;
+  top: 75px;
+  right: -10px;
+}
+.minute {
+  color: #f50096;
+}
+.seconds {
+  color: #f55d52;
+}
+.day-night {
+  color: white;
+}
+.month {
+  color: #d6ea57;
+  font-size: 1em;
+  font-weight: 500;
+  position: relative;
+  top: -155px;
+  left: 195px;
+}
+.day {
+  color: #a30cf4;
+}
+.year {
+  color: #09f499;
 }
 
 .clock {
