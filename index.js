@@ -25,3 +25,16 @@ const digital3 = digitalTemplate.content.cloneNode(true);
 digitalTime.appendChild(digital);
 digitalTime2.appendChild(digital2);
 digitalTime3.appendChild(digital3);
+
+let seattleElement = document.querySelector("#Seattle");
+let seattleDateElement = seattleElement.querySelector(".date");
+seattleDateElement.innerHTML = "May 26th, 2024";
+
+let hr = document.querySelector("#hours");
+let mm = document.querySelector("#minutes");
+let sc = document.querySelector("#seconds");
+
+let m = moment();
+let second = m.format(ss) * 6;
+let minute = m.format(mm) * 6 + second / 60;
+let hour = ((m.format(hh) % 12) / 12) * 360 + 90 + minute / 12;
