@@ -26,3 +26,17 @@ function timeUpdate() {
   monthElement.innerHTML = time.format("MMMM Do, YYYY");
 }
 setInterval(timeUpdate, 1000);
+
+function mainTimeUpdate() {
+  let time = moment().tz("Asia/Seoul");
+  let mainHr = document.querySelector("#timeClock .hours");
+  let mainMn = document.querySelector("#timeClock .minutes");
+  let mainSc = document.querySelector("#timeClock .seconds");
+  let ampm = document.querySelector("#timeClock .day-night");
+
+  mainHr.innerHTML = time.format("h:");
+  mainMn.innerHTML = time.format("mm:");
+  mainSc.innerHTML = time.format("ss");
+  ampm.innerHTML = time.format("A");
+}
+setInterval(mainTimeUpdate, 1000);
