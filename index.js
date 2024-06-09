@@ -22,8 +22,6 @@ function timeUpdate() {
   let zurichTimeZone = time.tz("Europe/Zurich");
   zurichDate.innerHTML = time.format("MMMM Do, YYYY");
   zurichTime.innerHTML = zurichTimeZone.format("h:mm:ss [<small>]A[</small>]");
-  let monthElement = document.querySelector(".month");
-  monthElement.innerHTML = time.format("MMMM Do, YYYY");
 }
 setInterval(timeUpdate, 1000);
 
@@ -34,9 +32,33 @@ function mainTimeUpdate() {
   let mainSc = document.querySelector("#timeClock .seconds");
   let ampm = document.querySelector("#timeClock .day-night");
 
+  let monthElement = document.querySelector(".month");
+  monthElement.innerHTML = time.format("MMMM Do, YYYY");
+
   mainHr.innerHTML = time.format("h:");
   mainMn.innerHTML = time.format("mm:");
   mainSc.innerHTML = time.format("ss");
   ampm.innerHTML = time.format("A");
 }
 setInterval(mainTimeUpdate, 1000);
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  let cityName = cityTimeZone.replace("_", "").split("/")[1];
+  let citiesElement = document.querySelector("#main-location");
+  citiesElement.innerHTML = `
+   <div class="place">${cityName}</div>
+          <div id="timeClock">
+            <div class="hours">${cityTime.format("h:")}</div>
+            <div class="minutes">${cityTime.format("mm:")}</div>
+            <div class="seconds">${cityTime.format("ss")}</div>
+            <div class="day-night">${cityTime.format("A")}</div>
+          </div>
+          <div class="month">${cityTime.format("MMMM Do, YYYY")}</div>
+  `;
+}
+
+let selectElement = document.querySelector("#city");
+
+selectElement.addEventListener("change", updateCity);
