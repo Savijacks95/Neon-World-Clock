@@ -45,10 +45,10 @@ setInterval(mainTimeUpdate, 1000);
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityTime = moment().tz(cityTimeZone);
-  let cityName = cityTimeZone.replace("_", "").split("/")[1];
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let citiesElement = document.querySelector("#main-location");
   citiesElement.innerHTML = `
-   <div class="place">${cityName}</div>
+   <div class="place">${cityTimeZone}</div>
           <div id="timeClock">
             <div class="hours">${cityTime.format("h:")}</div>
             <div class="minutes">${cityTime.format("mm:")}</div>
